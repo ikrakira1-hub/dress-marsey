@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="desenhos/icones/ICON.webp" type="image/x-icon">
+  <title>GAME</title>
+</head>
+
+<body>
+  <div id="game-container">
+    <!-- Personagem base -->
+    <img src="desenhos/corpo/2.png" id="personagem" class="camada" />
+
+    <!-- Camadas para os itens -->
+    <img id="manpu" class="camada" />
+    <img id="parte-supe" class="camada" />
+    <img id="parte-infe" class="camada" />
+    <img id="sapato" class="camada" />
+    <img id="oculos" class="camada" />
+    <img id="chapeu" class="camada" />
+    <img id="face" class="camada" />
+    <img id="vestido" class="camada" />
+  </div>
+
+  <div id="painel-itens-container">
+    <!-- Abas vão aparecer aqui -->
+  </div>
+
+  <div id="barra-botoes">
+    <button class="btn-categoria" data-categoria="manpu" title="Manpu">
+      <img src="desenhos/icones/brilha.png" alt="Manpu" />
+    </button>
+    <button class="btn-categoria" data-categoria="parte-supe" title="Camisa">
+      <img src="desenhos/icones/camiseta.png" alt="Camisa" />
+    </button>
+    <button class="btn-categoria" data-categoria="parte-infe" title="Saia">
+      <img src="desenhos/icones/saia.png" alt="Saia" />
+    </button>
+    <button class="btn-categoria" data-categoria="sapato" title="Sapato">
+      <img src="desenhos/icones/sapato.png" alt="Sapato" />
+    </button>
+    <button class="btn-categoria" data-categoria="oculos" title="Óculos">
+      <img src="desenhos/icones/oculos.png" alt="Óculos" />
+    </button>
+    <button class="btn-categoria" data-categoria="chapeu" title="Chapéu">
+      <img src="desenhos/icones/chapeu.png" alt="Chapéu" />
+    </button>
+    <button class="btn-categoria" data-categoria="face" title="Expressão">
+      <img src="desenhos/icones/gato.png" alt="Expressão" />
+    </button>
+    <button class="btn-categoria" data-categoria="vestido" title="Vestido">
+      <img src="desenhos/icones/vestido.png" alt="Vestido" />
+    </button>
+  </div>
+
+  <button id="btn-salvar">SAVE</button>
+  <button id="btn-undo">↩ UNDO</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

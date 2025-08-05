@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffe6f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+#game-container {
+  position: relative;
+  width: 360px;
+  height: 540px;
+  margin: 0 auto 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(204, 51, 102, 0.5);
+  overflow: visible;
+}
+
+/* Camadas das imagens (personagem e itens) */
+.camada {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  /* impede clicar na imagem da camada */
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+#barra-botoes {
+  width: 100%;
+  max-width: 420px;
+  margin: 10px auto 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.btn-categoria {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  outline-offset: 2px;
+  transition: transform 0.2s ease;
+}
+
+.btn-categoria img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.btn-categoria:hover,
+.btn-categoria.active {
+  transform: scale(1.15);
+}
+
+#painel-itens-container {
+  width: 360px;
+  max-width: 100%;
+  margin: 0 auto 20px;
+  min-height: 100px;
+  border-radius: 8px;
+  background: #f8f0f5;
+  box-shadow: 0 0 8px rgba(204, 51, 102, 0.4);
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 5px;
+  display: none;
+}
+
+.painel-aba {
+  display: inline-block;
+  margin: 0 6px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: box-shadow 0.15s ease;
+}
+
+.painel-aba img {
+  width: 70px;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+.painel-aba:hover img,
+.painel-aba.active img {
+  border-color: #cc3366;
+  box-shadow: 0 0 10px #cc3366;
+}
+
+#btn-salvar {
+  background-color: #cc3366;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+#btn-salvar:hover {
+  background-color: #b32a5a;
+}
+
+#btn-undo {
+  background-color: #cc3366;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+#btn-undo:hover {
+  background-color: #b32a5a;
+}
